@@ -1,0 +1,16 @@
+# VoiceLab - packages for the app (frontend, preprocessing, SIP analysis)
+#
+# Lower bounds only. Voice synthesis (XTTS-v2) runs in Google Colab, so the heavy
+# packages (torch, coqui-tts) are NOT needed on your laptop. They are installed by
+# the notebook in colab/VoiceLab_XTTS_v2.ipynb.
+#
+# Note: these versions were tested together with Python 3.13 on Linux. They have not
+# yet been tested on Windows. pip will tell you immediately if something does not fit.
+streamlit>=1.40
+numpy>=1.26
+scipy>=1.11
+pandas>=2.0
+matplotlib>=3.8
+soundfile>=0.12      # lets VoiceLab read FLAC/OGG (and MP3 on recent versions); WAV works without it
+
+requests>=2.31,<3

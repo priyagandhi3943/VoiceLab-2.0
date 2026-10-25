@@ -1,0 +1,28 @@
+# Virtual environment
+.venv/
+venv/
+ENV/
+
+# Python cache & build artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Streamlit secrets & local credentials
+.streamlit/secrets.toml
+.env
+.env.*
+
+# Generated & temporary audio files (keep sample demo audio)
+*.wav
+!samples/demo_reference_voice.wav
+!samples/demo_generated_voice.wav
+*.mp3
+*.flac
+*.ogg
+!samples/*
+
+# Operating System files
+.DS_Store
+Thumbs.db

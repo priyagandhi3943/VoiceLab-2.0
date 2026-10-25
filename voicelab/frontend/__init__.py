@@ -1,0 +1,1 @@
+"""VoiceLab frontend components module."""
